@@ -17,7 +17,13 @@ for (item of buttons) {
             screenValue = "";
             screen.value = screenValue;
         } else if (buttonText == "=") {
-            screen.value = eval(screenValue);
+            try {
+                screen.value = eval(screenValue);
+            } catch (err) {
+                screen.value = "Error! Please Type Numbers and Operators Correctly";
+                screen.style.fontSize = '17px';
+                setTimeout(() => location.reload(), 4000);
+            }
         } else {
             screenValue = screenValue + buttonText;
             screen.value = screenValue;
