@@ -1,0 +1,105 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #ecf0f1;
+    background-color: rgb(23, 34, 37);
+    font-family: sans-serif;
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-weight: 500;
+    margin-left: 0.25rem;
+    margin-bottom: 0;
+}
+
+h1 a {
+    color: #f1c40f;
+    font-size: 2.5rem;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+h1 a:hover {
+    text-shadow: 0px 0px 10px rgba(241, 196, 15, 0.5);
+    transition: all 0.5s ease;
+}
+
+.calculator {
+    padding: 0.25rem;
+    display: inline-block;
+}
+
+input {
+    background-color: rgba(52, 73, 94, 0.5);
+    color: #ecf0f1;
+    outline: none;
+    text-align: right;
+    border: none;
+    font-size: 3rem;
+    width: 78vw;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    margin: auto;
+}
+
+button {
+    border: none;
+    background-color: white;
+    width: 20vw;
+    height: 10vh;
+    padding: 0.25rem 0;
+    margin: 0.25vmax;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 0px rgba(155, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+button#C {
+    background-color: #f01600;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+button#E {
+    background-color: #25db72;
+    font-weight: bold;
+    color: #ecf0f1;
+}
